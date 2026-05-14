@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Live Prices | ArbiLearn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body data-page="prices">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="ArbiLearn home">
+        <span class="brand-mark">A</span>
+        <span>ArbiLearn</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+        <i class="fa-solid fa-bars menu-icon" aria-hidden="true"></i>
+        <span class="nav-toggle-label">Menu</span>
+      </button>
+      <nav class="site-nav" id="primaryNav" aria-label="Primary navigation">
+        <a href="index.html" data-nav="home"><span class="nav-icon" aria-hidden="true"><i class="fa-solid fa-house"></i></span><span>Home</span></a>
+        <a href="concepts.html" data-nav="concepts"><span class="nav-icon" aria-hidden="true"><i class="fa-solid fa-lightbulb"></i></span><span>Concepts</span></a>
+        <a href="prices.html" data-nav="prices"><span class="nav-icon" aria-hidden="true"><i class="fa-solid fa-wallet"></i></span><span>Live Prices</span></a>
+        <a href="simulator.html" data-nav="simulator"><span class="nav-icon" aria-hidden="true"><i class="fa-solid fa-cubes"></i></span><span>Block Simulator</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-intro dashboard-intro">
+        <div>
+          <p class="eyebrow">CoinGecko dashboard</p>
+          <h1>Live crypto prices.</h1>
+          <p>Refresh current USD prices and 24-hour movement for major Web3 assets.</p>
+        </div>
+        <button class="button primary" type="button" id="refreshPrices">Refresh prices</button>
+      </section>
+
+      <section class="price-status" aria-live="polite">
+        <p id="priceMessage">Loading live prices...</p>
+      </section>
+
+      <section class="market-panel" aria-label="Live market chart">
+        <div class="market-toolbar">
+          <div>
+            <p class="eyebrow">7 day market graph</p>
+            <h2 id="chartTitle">Ethereum trend</h2>
+          </div>
+          <div class="chart-tabs" id="chartTabs" aria-label="Choose chart coin"></div>
+        </div>
+        <div class="chart-wrap">
+          <svg id="marketChart" viewBox="0 0 900 320" role="img" aria-label="Live crypto price trend chart"></svg>
+        </div>
+      </section>
+
+      <section class="price-grid" id="priceGrid" aria-label="Live cryptocurrency price cards">
+        <article class="price-card loading">
+          <span class="coin-symbol">ETH</span>
+          <h2>Ethereum</h2>
+          <p class="price-value">$--</p>
+          <p class="change neutral">Waiting for data</p>
+        </article>
+        <article class="price-card loading">
+          <span class="coin-symbol">BTC</span>
+          <h2>Bitcoin</h2>
+          <p class="price-value">$--</p>
+          <p class="change neutral">Waiting for data</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Built by Patel Tirth | <a href="https://github.com/Torototooo/Arbitrum_Builder_Labs_Workshop" target="_blank" rel="noreferrer">GitHub</a> | Batch: IT SEM-4</p>
+    </footer>
+  </body>
+</html>

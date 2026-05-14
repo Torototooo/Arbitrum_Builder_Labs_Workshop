@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Block Simulator | ArbiLearn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body data-page="simulator">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="ArbiLearn home">
+        <span class="brand-mark">A</span>
+        <span>ArbiLearn</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+        <i class="fa-solid fa-bars menu-icon" aria-hidden="true"></i>
+        <span class="nav-toggle-label">Menu</span>
+      </button>
+      <nav class="site-nav" id="primaryNav" aria-label="Primary navigation">
+        <a href="index.html" data-nav="home"><span class="nav-icon" aria-hidden="true"><i class="fa-solid fa-house"></i></span><span>Home</span></a>
+        <a href="concepts.html" data-nav="concepts"><span class="nav-icon" aria-hidden="true"><i class="fa-solid fa-lightbulb"></i></span><span>Concepts</span></a>
+        <a href="prices.html" data-nav="prices"><span class="nav-icon" aria-hidden="true"><i class="fa-solid fa-wallet"></i></span><span>Live Prices</span></a>
+        <a href="simulator.html" data-nav="simulator"><span class="nav-icon" aria-hidden="true"><i class="fa-solid fa-cubes"></i></span><span>Block Simulator</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-intro dashboard-intro">
+        <div>
+          <p class="eyebrow">Proof-of-work lab</p>
+          <h1>Mine blocks and break the chain.</h1>
+          <p>Change the first block after mining, and watch the next block lose validity because its history no longer matches.</p>
+        </div>
+      </section>
+
+      <section class="simulator-grid" aria-label="Interactive block mining simulator">
+        <article class="block-card" data-block-card="1">
+          <div class="block-title">
+            <h2>Block 1</h2>
+            <span class="validity" id="validity1">Block Invalid</span>
+          </div>
+          <label for="data1">Block Data</label>
+          <textarea id="data1" rows="4">Alice sends 0.4 ETH to Bob</textarea>
+          <label for="prev1">Previous Hash</label>
+          <input id="prev1" type="text" value="0000000000000000" readonly>
+          <label for="nonce1">Nonce</label>
+          <input id="nonce1" type="number" min="0" value="0">
+          <button class="button primary mine-button" type="button" data-mine="1">Mine Block 1</button>
+          <div class="hash-output">
+            <span>Hash</span>
+            <code id="hash1">Not mined yet</code>
+          </div>
+        </article>
+
+        <article class="block-card" data-block-card="2">
+          <div class="block-title">
+            <h2>Block 2</h2>
+            <span class="validity" id="validity2">Block Invalid</span>
+          </div>
+          <label for="data2">Block Data</label>
+          <textarea id="data2" rows="4">Bob swaps ETH for ARB on Arbitrum</textarea>
+          <label for="prev2">Previous Hash from Block 1</label>
+          <input id="prev2" type="text" value="" readonly>
+          <label for="nonce2">Nonce</label>
+          <input id="nonce2" type="number" min="0" value="0">
+          <button class="button primary mine-button" type="button" data-mine="2">Mine Block 2</button>
+          <div class="hash-output">
+            <span>Hash</span>
+            <code id="hash2">Not mined yet</code>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Built by Patel Tirth | <a href="https://github.com/Torototooo/Arbitrum_Builder_Labs_Workshop" target="_blank" rel="noreferrer">GitHub</a> | Batch: IT SEM-4</p>
+    </footer>
+  </body>
+</html>

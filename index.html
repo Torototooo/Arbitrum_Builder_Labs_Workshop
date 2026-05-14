@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ArbiLearn | Layer 2 Made Clear</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="ArbiLearn home">
+        <span class="brand-mark">A</span>
+        <span>ArbiLearn</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+        <i class="fa-solid fa-bars menu-icon" aria-hidden="true"></i>
+        <span class="nav-toggle-label">Menu</span>
+      </button>
+      <nav class="site-nav" id="primaryNav" aria-label="Primary navigation">
+        <a href="index.html" data-nav="home"><span class="nav-icon" aria-hidden="true"><i class="fa-solid fa-house"></i></span><span>Home</span></a>
+        <a href="concepts.html" data-nav="concepts"><span class="nav-icon" aria-hidden="true"><i class="fa-solid fa-lightbulb"></i></span><span>Concepts</span></a>
+        <a href="prices.html" data-nav="prices"><span class="nav-icon" aria-hidden="true"><i class="fa-solid fa-wallet"></i></span><span>Live Prices</span></a>
+        <a href="simulator.html" data-nav="simulator"><span class="nav-icon" aria-hidden="true"><i class="fa-solid fa-cubes"></i></span><span>Block Simulator</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-copy">
+          <p class="eyebrow">Arbitrum and Layer 2 overview</p>
+          <h1>Learn why Web3 needs faster rails.</h1>
+          <p class="hero-text">
+            ArbiLearn turns Ethereum scaling into a visual, hands-on website: compare core concepts, track live prices, and mine tiny blocks to see immutability in action.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="simulator.html">Try the simulator</a>
+            <a class="button secondary" href="concepts.html">Explore concepts</a>
+          </div>
+        </div>
+        <div class="chain-visual" aria-label="Three connected blockchain blocks">
+          <article class="visual-block">
+            <span>01</span>
+            <strong>Transactions</strong>
+            <small>Users send value and smart contract calls.</small>
+          </article>
+          <div class="chain-link" aria-hidden="true"></div>
+          <article class="visual-block raised">
+            <span>02</span>
+            <strong>Rollup Batch</strong>
+            <small>Many actions are bundled together.</small>
+          </article>
+          <div class="chain-link" aria-hidden="true"></div>
+          <article class="visual-block">
+            <span>03</span>
+            <strong>Ethereum Proof</strong>
+            <small>The final record anchors back to mainnet.</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Why Layer 2 matters</p>
+          <h2>Ethereum security, smoother everyday use.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="icon" aria-hidden="true"><i class="fa-solid fa-server"></i></span>
+            <h3>Ethereum got crowded</h3>
+            <p>Mainnet is secure, but high demand can make transactions slower and more expensive for regular users.</p>
+          </article>
+          <article class="feature-card">
+            <span class="icon" aria-hidden="true"><i class="fa-solid fa-layer-group"></i></span>
+            <h3>Arbitrum bundles activity</h3>
+            <p>Arbitrum processes transactions off mainnet, groups them, and posts compressed proof back to Ethereum.</p>
+          </article>
+          <article class="feature-card">
+            <span class="icon" aria-hidden="true"><i class="fa-solid fa-wallet"></i></span>
+            <h3>Lower cost, familiar tools</h3>
+            <p>Users can interact with DeFi and apps using Ethereum-style wallets while paying much lower gas fees.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split-panel">
+        <div>
+          <p class="eyebrow">Real-world benefit</p>
+          <h2>Small transactions become practical again.</h2>
+        </div>
+        <p>
+          On Ethereum mainnet, a tiny swap or game action can become expensive during busy periods. On Arbitrum, the same style of interaction is usually cheaper because many transactions share the cost of settlement.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Built by Patel Tirth | <a href="https://github.com/Torototooo/Arbitrum_Builder_Labs_Workshop" target="_blank" rel="noreferrer">GitHub</a> | Batch: IT SEM-4</p>
+    </footer>
+  </body>
+</html>

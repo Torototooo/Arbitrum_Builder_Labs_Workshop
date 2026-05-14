@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Concepts | ArbiLearn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body data-page="concepts">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="ArbiLearn home">
+        <span class="brand-mark">A</span>
+        <span>ArbiLearn</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+        <i class="fa-solid fa-bars menu-icon" aria-hidden="true"></i>
+        <span class="nav-toggle-label">Menu</span>
+      </button>
+      <nav class="site-nav" id="primaryNav" aria-label="Primary navigation">
+        <a href="index.html" data-nav="home"><span class="nav-icon" aria-hidden="true"><i class="fa-solid fa-house"></i></span><span>Home</span></a>
+        <a href="concepts.html" data-nav="concepts"><span class="nav-icon" aria-hidden="true"><i class="fa-solid fa-lightbulb"></i></span><span>Concepts</span></a>
+        <a href="prices.html" data-nav="prices"><span class="nav-icon" aria-hidden="true"><i class="fa-solid fa-wallet"></i></span><span>Live Prices</span></a>
+        <a href="simulator.html" data-nav="simulator"><span class="nav-icon" aria-hidden="true"><i class="fa-solid fa-cubes"></i></span><span>Block Simulator</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-intro">
+        <p class="eyebrow">Reference deck</p>
+        <h1>Core Web3 ideas, side by side.</h1>
+        <p>Each card compares two related ideas so the differences are easy to scan, remember, and explain.</p>
+      </section>
+
+      <section class="comparison-list" aria-label="Web3 concept comparisons">
+        <article class="comparison-card">
+          <h2>Web2 vs Web3</h2>
+          <div class="compare-columns">
+            <div>
+              <span class="tag">Web2</span>
+              <p>Apps are owned by companies. Your account, data, and permissions usually live on private servers.</p>
+            </div>
+            <div>
+              <span class="tag accent">Web3</span>
+              <p>Apps can use public networks. Wallets, tokens, and smart contracts let users carry ownership across apps.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="comparison-card">
+          <h2>Ethereum vs Bitcoin</h2>
+          <div class="compare-columns">
+            <div>
+              <span class="tag">Bitcoin</span>
+              <p>Designed mainly as digital money with a simple, durable rule set for sending and storing value.</p>
+            </div>
+            <div>
+              <span class="tag accent">Ethereum</span>
+              <p>Designed as programmable infrastructure where developers deploy smart contracts and decentralized apps.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="comparison-card">
+          <h2>Public Key vs Private Key</h2>
+          <div class="compare-columns">
+            <div>
+              <span class="tag">Public Key</span>
+              <p>Your visible receiving identity. It can be shared so others can send assets or verify signatures.</p>
+            </div>
+            <div>
+              <span class="tag danger">Private Key</span>
+              <p>Your secret signing power. Anyone who gets it can control the wallet, so it must stay protected.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="comparison-card">
+          <h2>Blockchain vs Traditional Databases</h2>
+          <div class="compare-columns">
+            <div>
+              <span class="tag">Database</span>
+              <p>A central operator can edit records, control access, and optimize for fast private application data.</p>
+            </div>
+            <div>
+              <span class="tag accent">Blockchain</span>
+              <p>A shared network records changes in linked blocks, making history transparent and difficult to rewrite.</p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Built by Patel Tirth | <a href="https://github.com/Torototooo/Arbitrum_Builder_Labs_Workshop" target="_blank" rel="noreferrer">GitHub</a> | Batch: IT SEM-4</p>
+    </footer>
+  </body>
+</html>
