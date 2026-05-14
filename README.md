@@ -1,6 +1,6 @@
 # ArbiLearn
 
-🚀 **Live Demo:** (https://arbitrum-builder-labs-workshop.vercel.app/)
+🚀 **Live Demo:** ( https://arbitrum-builder-labs-workshop.vercel.app/ )
 
 ## Project Description
 ArbiLearn is a visual, hands-on website designed to make Ethereum scaling and Layer 2 concepts clear. It allows users to compare core concepts, track live prices, and mine tiny blocks to see immutability in action.
